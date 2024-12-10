@@ -16,7 +16,7 @@ const SignIn = () => {
         // update last login time
         const lastSignInTime = result?.user?.metadata?.lastSignInTime;
         const loginInfo = { email, lastSignInTime };
-        fetch(`http://localhost:5000/users`, {
+        fetch(`https://coffee-store-server-omega-black.vercel.app/users`, {
           method: "PATCH",
           headers: {
             "content-type": "application/json",
@@ -68,7 +68,7 @@ const SignIn = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Sign In</button>
+                <button className="btn btn-primary">Sign In or Register</button>
               </div>
             </form>
           </div>

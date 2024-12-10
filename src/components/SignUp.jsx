@@ -16,7 +16,7 @@ const SignUp = () => {
         console.log(result.user);
         const newUser = { name, email, password };
         // save user to database
-        fetch("http://localhost:5000/users", {
+        fetch("https://coffee-store-server-omega-black.vercel.app/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",
